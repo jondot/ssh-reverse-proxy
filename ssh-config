@@ -5,5 +5,5 @@ Host *
 Host http-tunnel
     HostName HTTP_TUNNEL_HOST
     User HTTP_TUNNEL_USER
-    RemoteForward HTTP_TUNNEL_PORT localhost:80
+    LocalForward 127.0.0.1:5000 127.0.0.1:HTTP_TUNNEL_PORT
     IdentityFile ~/.ssh/identity
