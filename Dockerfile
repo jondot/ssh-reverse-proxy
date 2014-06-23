@@ -17,3 +17,4 @@ ADD supervisord.conf /etc/supervisor/
 ADD init /usr/local/sbin/init.ssh-reverse-proxy
 
 ENTRYPOINT ["/usr/local/sbin/init.ssh-reverse-proxy"]
+EXPOSE 8080
